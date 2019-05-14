@@ -17,24 +17,24 @@ module.exports = {
                 }
             },
             {
-                test: /\.(jp(e*)g)$/,  
+                test: /\.(jp(e*)g)$/,
                 use: [{
                     loader: 'url-loader',
-                    options: { 
+                    options: {
                         limit: 8000, // Convert images < 8kb to base64 strings
                         name: 'images/[hash]-[name].[ext]'
-                    } 
+                    }
                 }]
             },
             {
-                test:/\.css$/,
-                use:['style-loader','css-loader']
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template:'./public/index.html'
+            template: './public/index.html'
         })
     ]
 }
