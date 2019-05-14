@@ -8,7 +8,7 @@
     "react-scripts": "3.0.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --port 3000 --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "jest --watchAll"
   },
@@ -54,11 +54,12 @@
       "@babel/preset-react"
     ]
   },
-    "jest": {
-      "setupFilesAfterEnv": ["<rootDir>src/tests/config/setupTests.js"],
-      "moduleNameMapper": {
-        "\\.(jpg|jpeg|png|gif)$": "<rootDir>/src/tests/config/fileMock.js"
-      }
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/tests/config/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/src/tests/config/fileMock.js"
     }
+  }
 }
-
