@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --port 5000 || process.env.PORT ",
-    "build": "webpack --mode production --port 5000 || process.env.PORT ",
+    "build": "webpack --mode production --port process.env.PORT ",
     "test": "jest --watchAll"
   },
   "eslintConfig": {
