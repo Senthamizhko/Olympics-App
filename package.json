@@ -8,10 +8,8 @@
     "react-scripts": "3.0.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --port 5000 || process.env.PORT ",
-    "build": "webpack --mode production --port 3000 || process.env.PORT ",
-    "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "webpack -p",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
     "test": "jest --watchAll"
   },
   "eslintConfig": {
@@ -49,12 +47,6 @@
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.3.1"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
   },
   "jest": {
     "setupFilesAfterEnv": [
