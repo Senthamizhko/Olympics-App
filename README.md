@@ -1,6 +1,6 @@
 ## olympics-app 
 
-## Production deployed link : https://elegant-lovelace-e086e8.netlify.com/
+## Production deployed link : https://sentha-olympics-react.netlify.com/
 
 ## Available Scripts
 
